@@ -86,7 +86,7 @@ This project is an AI-based resume parsing and HR assistant tool. It extracts st
 ---
 
 ## AI Architecture Diagram (Text Version)
-![AI Architecture](./architecture_diagram.svg)
+![AI Architecture](architecture_diagram/graphviz.svg)
 
 
 ## Contact
