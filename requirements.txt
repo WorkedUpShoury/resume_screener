@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pypdf
+PyPDF2
+google-generativeai
+chromadb
+pydantic
+faiss-cpu     
+langchain        
+python-dotenv 
