@@ -56,9 +56,9 @@ This project is an AI-based resume parsing and HR assistant tool. It extracts st
 
 ## Images
 
-* Screenshot of Resume Parsing: ![Resume Parsing](screenshots/resume_upload.png)
+* Screenshot of Resume Parsing: ![Resume Parsing](assets/resume_upload.png)
 
-* Screenshot of Chatbot Answering:  ![Resume Parsing](screenshots/chatbot.png)
+* Screenshot of Chatbot Answering:  ![Resume Parsing](assets/chatbot.png)
 ### Video Demo
 
 🎥 [Watch Demo on Loom](https://www.loom.com/share/2e4f03938dc844b5987f82632b73067b?sid=a287d06b-6c4c-4c28-99fa-38871eb5da3c)
@@ -86,7 +86,7 @@ This project is an AI-based resume parsing and HR assistant tool. It extracts st
 ---
 
 ## AI Architecture Diagram (Text Version)
-![AI Architecture](architecture_diagram/graphviz.svg)
+![AI Architecture](assets/arch_diagram.svg)
 
 
 ## Contact
