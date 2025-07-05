@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="475pt" height="425pt" viewBox="0.00 0.00 474.74 424.80">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 420.8)">
+<title>AI_Modular_Architecture</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-420.8 470.74,-420.8 470.74,4 -4,4"/>
+<!-- DataSources -->
+<g id="node1" class="node">
+<title>DataSources</title>
+<polygon fill="lightblue" stroke="black" points="244.53,-416.8 116.67,-416.8 116.67,-380.8 244.53,-380.8 244.53,-416.8"/>
+<text text-anchor="middle" x="180.6" y="-402.1" font-family="Helvetica,sans-Serif" font-size="11.00">Data Sources</text>
+<text text-anchor="middle" x="180.6" y="-388.9" font-family="Helvetica,sans-Serif" font-size="11.00">(APIs, Logs, IoT, Files)</text>
+</g>
+<!-- Ingestion -->
+<g id="node2" class="node">
+<title>Ingestion</title>
+<polygon fill="lightyellow" stroke="black" points="251.87,-343.8 109.33,-343.8 109.33,-307.8 251.87,-307.8 251.87,-343.8"/>
+<text text-anchor="middle" x="180.6" y="-329.1" font-family="Helvetica,sans-Serif" font-size="11.00">Data Ingestion</text>
+<text text-anchor="middle" x="180.6" y="-315.9" font-family="Helvetica,sans-Serif" font-size="11.00">(ETL, Stream Processing)</text>
+</g>
+<!-- DataSources&#45;&gt;Ingestion -->
+<g id="edge1" class="edge">
+<title>DataSources-&gt;Ingestion</title>
+<path fill="none" stroke="black" d="M180.6,-380.61C180.6,-373.03 180.6,-363.9 180.6,-355.34"/>
+<polygon fill="black" stroke="black" points="184.1,-355.34 180.6,-345.34 177.1,-355.34 184.1,-355.34"/>
+</g>
+<!-- Storage -->
+<g id="node3" class="node">
+<title>Storage</title>
+<polygon fill="lightgreen" stroke="black" points="241.16,-270.8 120.03,-270.8 120.03,-234.8 241.16,-234.8 241.16,-270.8"/>
+<text text-anchor="middle" x="180.6" y="-256.1" font-family="Helvetica,sans-Serif" font-size="11.00">Data Storage</text>
+<text text-anchor="middle" x="180.6" y="-242.9" font-family="Helvetica,sans-Serif" font-size="11.00">(S3, DWH, BigQuery)</text>
+</g>
+<!-- Ingestion&#45;&gt;Storage -->
+<g id="edge2" class="edge">
+<title>Ingestion-&gt;Storage</title>
+<path fill="none" stroke="black" d="M180.6,-307.61C180.6,-300.03 180.6,-290.9 180.6,-282.34"/>
+<polygon fill="black" stroke="black" points="184.1,-282.34 180.6,-272.34 177.1,-282.34 184.1,-282.34"/>
+</g>
+<!-- Preprocessing -->
+<g id="node4" class="node">
+<title>Preprocessing</title>
+<polygon fill="lightpink" stroke="black" points="466.74,-270.8 276.46,-270.8 276.46,-234.8 466.74,-234.8 466.74,-270.8"/>
+<text text-anchor="middle" x="371.6" y="-256.1" font-family="Helvetica,sans-Serif" font-size="11.00">Data Preprocessing</text>
+<text text-anchor="middle" x="371.6" y="-242.9" font-family="Helvetica,sans-Serif" font-size="11.00">(Cleaning, Labeling, Feature Engg.)</text>
+</g>
+<!-- Storage&#45;&gt;Preprocessing -->
+<g id="edge3" class="edge">
+<title>Storage-&gt;Preprocessing</title>
+<path fill="none" stroke="black" d="M241.4,-252.8C249.15,-252.8 256.89,-252.8 264.64,-252.8"/>
+<polygon fill="black" stroke="black" points="264.47,-256.3 274.47,-252.8 264.47,-249.3 264.47,-256.3"/>
+</g>
+<!-- Training -->
+<g id="node5" class="node">
+<title>Training</title>
+<polygon fill="orange" stroke="black" points="372.52,-197.8 244.67,-197.8 244.67,-161.8 372.52,-161.8 372.52,-197.8"/>
+<text text-anchor="middle" x="308.6" y="-183.1" font-family="Helvetica,sans-Serif" font-size="11.00">Model Training</text>
+<text text-anchor="middle" x="308.6" y="-169.9" font-family="Helvetica,sans-Serif" font-size="11.00">(PyTorch, TensorFlow)</text>
+</g>
+<!-- Preprocessing&#45;&gt;Training -->
+<g id="edge4" class="edge">
+<title>Preprocessing-&gt;Training</title>
+<path fill="none" stroke="black" d="M356.35,-234.61C348.84,-226.15 339.64,-215.78 331.32,-206.41"/>
+<polygon fill="black" stroke="black" points="333.97,-204.12 324.71,-198.96 328.73,-208.76 333.97,-204.12"/>
+</g>
+<!-- Evaluation -->
+<g id="node6" class="node">
+<title>Evaluation</title>
+<polygon fill="gold" stroke="black" points="113.2,-109 0,-109 0,-73 113.2,-73 113.2,-109"/>
+<text text-anchor="middle" x="56.6" y="-94.3" font-family="Helvetica,sans-Serif" font-size="11.00">Model Evaluation</text>
+<text text-anchor="middle" x="56.6" y="-81.1" font-family="Helvetica,sans-Serif" font-size="11.00">(Metrics, Validation)</text>
+</g>
+<!-- Training&#45;&gt;Evaluation -->
+<g id="edge5" class="edge">
+<title>Training-&gt;Evaluation</title>
+<path fill="none" stroke="black" d="M257.9,-161.34C217.58,-147.45 161,-127.96 118.09,-113.18"/>
+<polygon fill="black" stroke="black" points="119.24,-109.87 108.64,-109.93 116.96,-116.49 119.24,-109.87"/>
+</g>
+<!-- Deployment -->
+<g id="node7" class="node">
+<title>Deployment</title>
+<polygon fill="lightcyan" stroke="black" points="278.13,-109 149.06,-109 149.06,-73 278.13,-73 278.13,-109"/>
+<text text-anchor="middle" x="213.6" y="-94.3" font-family="Helvetica,sans-Serif" font-size="11.00">Model Deployment</text>
+<text text-anchor="middle" x="213.6" y="-81.1" font-family="Helvetica,sans-Serif" font-size="11.00">(Docker, REST, gRPC)</text>
+</g>
+<!-- Evaluation&#45;&gt;Deployment -->
+<g id="edge6" class="edge">
+<title>Evaluation-&gt;Deployment</title>
+<path fill="none" stroke="black" d="M113.63,-91C121.6,-91 129.56,-91 137.52,-91"/>
+<polygon fill="black" stroke="black" points="137.26,-94.5 147.26,-91 137.26,-87.5 137.26,-94.5"/>
+</g>
+<!-- Inference -->
+<g id="node8" class="node">
+<title>Inference</title>
+<polygon fill="lightgrey" stroke="black" points="265.91,-36 161.28,-36 161.28,0 265.91,0 265.91,-36"/>
+<text text-anchor="middle" x="213.6" y="-21.3" font-family="Helvetica,sans-Serif" font-size="11.00">Inference Service</text>
+<text text-anchor="middle" x="213.6" y="-8.1" font-family="Helvetica,sans-Serif" font-size="11.00">(Real-time, Batch)</text>
+</g>
+<!-- Deployment&#45;&gt;Inference -->
+<g id="edge7" class="edge">
+<title>Deployment-&gt;Inference</title>
+<path fill="none" stroke="black" d="M213.6,-72.81C213.6,-65.23 213.6,-56.1 213.6,-47.54"/>
+<polygon fill="black" stroke="black" points="217.1,-47.54 213.6,-37.54 210.1,-47.54 217.1,-47.54"/>
+</g>
+<!-- Monitoring -->
+<g id="node9" class="node">
+<title>Monitoring</title>
+<polygon fill="wheat" stroke="black" points="430.16,-36 301.04,-36 301.04,0 430.16,0 430.16,-36"/>
+<text text-anchor="middle" x="365.6" y="-21.3" font-family="Helvetica,sans-Serif" font-size="11.00">Monitoring &amp; Feedback</text>
+<text text-anchor="middle" x="365.6" y="-8.1" font-family="Helvetica,sans-Serif" font-size="11.00">(Model Drift, Logs)</text>
+</g>
+<!-- Inference&#45;&gt;Monitoring -->
+<g id="edge8" class="edge">
+<title>Inference-&gt;Monitoring</title>
+<path fill="none" stroke="black" d="M266.14,-18C273.89,-18 281.63,-18 289.37,-18"/>
+<polygon fill="black" stroke="black" points="289.21,-21.5 299.21,-18 289.21,-14.5 289.21,-21.5"/>
+</g>
+<!-- Monitoring&#45;&gt;Preprocessing -->
+<g id="edge10" class="edge">
+<title>Monitoring-&gt;Preprocessing</title>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M374.1,-36.03C378.81,-46.42 384.19,-60.15 386.6,-73 396.45,-125.54 386.36,-187.98 378.63,-223.44"/>
+<polygon fill="gray" stroke="gray" points="375.28,-222.38 376.47,-232.91 382.11,-223.94 375.28,-222.38"/>
+<text text-anchor="middle" x="422.51" y="-131.2" font-family="Times,serif" font-size="14.00"> data issues</text>
+</g>
+<!-- Monitoring&#45;&gt;Training -->
+<g id="edge9" class="edge">
+<title>Monitoring-&gt;Training</title>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M350.95,-36.41C343.19,-46.5 334.17,-59.78 328.68,-73 318.38,-97.8 313.32,-128.07 310.86,-149.87"/>
+<polygon fill="gray" stroke="gray" points="307.37,-149.51 309.86,-159.81 314.34,-150.21 307.37,-149.51"/>
+<text text-anchor="middle" x="357.64" y="-95.2" font-family="Times,serif" font-size="14.00"> retraining</text>
+<text text-anchor="middle" x="357.64" y="-78.4" font-family="Times,serif" font-size="14.00"> triggers</text>
+</g>
+</g>
+</svg>
